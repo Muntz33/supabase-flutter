@@ -1,0 +1,163 @@
+{
+  "brand_identity": {
+    "name": "Dr Ethergreen – YKY Hub",
+    "archetype": "Cyber-Shamanic / Jewel & Luxury",
+    "core_values": ["Mystical", "Hyper-realistic", "Bio-optimized", "Ancient-Future"],
+    "emotional_tone": "Deep, Resonant, Obsidian, Electric, Sacred"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Syne, sans-serif",
+      "weights": ["700", "800"],
+      "usage": "Main page titles, hero text, dramatic statements",
+      "letter_spacing": "tracking-tight"
+    },
+    "subheadings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["500", "600"],
+      "usage": "Section headers, card titles, data labels",
+      "letter_spacing": "tracking-wide"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, reading content, chat interface",
+      "line_height": "leading-relaxed"
+    }
+  },
+  "colors": {
+    "mode": "dark",
+    "palette": {
+      "background": {
+        "default": "#050505",
+        "paper": "#0A0A0A",
+        "subtle": "#121212"
+      },
+      "primary": {
+        "main": "#10B981",
+        "light": "#34D399",
+        "dark": "#047857",
+        "glow": "0 0 20px rgba(16, 185, 129, 0.5)"
+      },
+      "secondary": {
+        "main": "#9F1239",
+        "light": "#BE123C",
+        "dark": "#881337",
+        "glow": "0 0 15px rgba(159, 18, 57, 0.4)"
+      },
+      "accent": {
+        "main": "#F59E0B",
+        "light": "#FBBF24",
+        "glow": "0 0 10px rgba(245, 158, 11, 0.6)"
+      },
+      "text": {
+        "primary": "#ECFDF5",
+        "secondary": "#A7F3D0",
+        "muted": "#6EE7B7"
+      },
+      "border": {
+        "subtle": "rgba(255, 255, 255, 0.08)",
+        "highlight": "rgba(16, 185, 129, 0.3)"
+      }
+    },
+    "gradients": {
+      "obsidian_void": "radial-gradient(circle at center, #111827 0%, #050505 100%)",
+      "emerald_mist": "linear-gradient(180deg, rgba(16,185,129,0) 0%, rgba(16,185,129,0.05) 100%)",
+      "gold_dust": "linear-gradient(45deg, #F59E0B 0%, transparent 60%)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "obsidian_glass": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl",
+      "emerald_glass": "bg-emerald-900/20 backdrop-blur-lg border border-emerald-500/20"
+    },
+    "borders": {
+      "tracing_beam": "Use framer-motion to animate a glowing border path on active cards",
+      "subtle_edge": "1px solid rgba(255,255,255,0.08)"
+    },
+    "shadows": {
+      "neon_glow": "0 0 10px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.1)",
+      "deep_void": "0 25px 50px -12px rgba(0, 0, 0, 0.9)"
+    },
+    "textures": {
+      "noise": "url('/assets/noise.png') opacity-5 fixed inset-0 pointer-events-none z-50",
+      "scanlines": "repeating-linear-gradient(0deg, transparent, transparent 2px, #000 3px) opacity-10"
+    }
+  },
+  "layout_strategy": {
+    "grid_system": "Bento Grid (Asymmetrical)",
+    "spacing": "Generous (p-6 to p-12)",
+    "container_width": "max-w-7xl mx-auto",
+    "z_index_hierarchy": {
+      "background": -1,
+      "canvas_3d": 0,
+      "ui_layer": 10,
+      "overlays": 50,
+      "modals": 100
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-emerald-600 hover:bg-emerald-500 text-white rounded-full px-8 py-3 font-bold tracking-wide shadow-[0_0_15px_rgba(16,185,129,0.4)] transition-all hover:scale-105",
+      "secondary": "bg-transparent border border-emerald-500/30 text-emerald-400 hover:bg-emerald-950/30 rounded-full px-6 py-2",
+      "ghost": "text-emerald-300/70 hover:text-emerald-300 hover:bg-white/5"
+    },
+    "cards": {
+      "base": "bg-black/40 backdrop-blur-md border border-white/5 rounded-2xl p-6 hover:border-emerald-500/30 transition-colors duration-300",
+      "interactive": "cursor-pointer group relative overflow-hidden"
+    },
+    "inputs": {
+      "base": "bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-emerald-100 placeholder:text-emerald-100/30 focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all"
+    }
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": "https://images.unsplash.com/photo-1741704138665-57f72cf743f7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "voice_oracle_orb": "https://images.unsplash.com/photo-1731805597205-b37e2d9a9ffc?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "tarot_deck": "https://images.unsplash.com/photo-1704030328221-94fa7e021808?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "cosmic_overlay": "https://images.unsplash.com/photo-1605700311233-cbef0730016a?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "obsidian_texture": "https://images.pexels.com/photos/12650746/pexels-photo-12650746.jpeg"
+    },
+    "icons": "Lucide React (Default) or Phosphor Icons (Duotone) for mystical feel"
+  },
+  "motion": {
+    "libraries": ["framer-motion", "react-three-fiber"],
+    "preferences": {
+      "reduced_motion": "respect",
+      "default_transition": "type: 'spring', stiffness: 100, damping: 20",
+      "hover_scale": 1.02
+    }
+  },
+  "accessibility": {
+    "contrast_check": "Ensure Emerald text on Black meets 4.5:1",
+    "focus_states": "Ring-2 ring-emerald-400 ring-offset-2 ring-offset-black",
+    "screen_readers": "All mystical icons must have aria-labels"
+  },
+  "instructions_to_main_agent": [
+    "Implement the 'Obsidian Void' theme as default.",
+    "Use 'Syne' font for all major headings to give the 'Art/Mystical' vibe.",
+    "The Voice Oracle should be the centerpiece - use the Orb image or a CSS/3D sphere.",
+    "Dashboard must use the Bento Grid layout.",
+    "Tarot section needs a premium feel - use gold borders and flip animations.",
+    "Do not use generic gray backgrounds. Always tint with Emerald or Blue.",
+    "Ensure the 'Bio-Resonance' scanner looks technical but magical (holographic lines)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ]
+}
