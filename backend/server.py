@@ -412,7 +412,7 @@ Be specific, mystical, and impactful. Reference their Human Design and numerolog
     }
     result = tarot_readings_collection.insert_one(reading)
     reading["id"] = str(result.inserted_id)
-    del reading["_id"] if "_id" in reading else None
+    reading.pop("_id", None)
     
     return reading
 
