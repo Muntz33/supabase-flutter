@@ -485,7 +485,7 @@ Be specific and mystical. This is voice-based biofeedback analysis."""
         }
         
         bio_scans_collection.insert_one(scan_result.copy())
-        del scan_result["_id"] if "_id" in scan_result else None
+        scan_result.pop("_id", None)
         
         return scan_result
     except Exception as e:
