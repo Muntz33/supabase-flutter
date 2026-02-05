@@ -517,7 +517,10 @@ async def create_post(post: CommunityPost, user: dict = Depends(get_current_user
 async def get_feed(category: str = "all", limit: int = 20):
     """Get community feed"""
     query = {} if category == "all" else {"category": category}
-    posts = list(community_posts_collection.find(query, {"_id": 0}).sort("created_at", -1).limit(limit))
+    posts = list(community_posts_collection.find(
+        query, 
+        {"_id": 0, "user_id": 1, "user_name": 1, "content": 1, "category": 1, "likes": 1, "created_at": 1}
+    ).sort("created_at", -1).limit(limit))
     return {"posts": posts}
 
 # ======================== PAYMENT ROUTES ========================
