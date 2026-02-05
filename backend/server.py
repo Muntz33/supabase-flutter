@@ -25,10 +25,14 @@ load_dotenv()
 
 # Environment variables
 MONGO_URL = os.environ.get("MONGO_URL")
-DB_NAME = os.environ.get("DB_NAME", "yky_hub")
+DB_NAME = os.environ.get("DB_NAME")
+if not DB_NAME:
+    raise ValueError("DB_NAME environment variable is required")
 EMERGENT_LLM_KEY = os.environ.get("EMERGENT_LLM_KEY")
 STRIPE_API_KEY = os.environ.get("STRIPE_API_KEY")
-JWT_SECRET = os.environ.get("JWT_SECRET", "yky_dragon_secret")
+JWT_SECRET = os.environ.get("JWT_SECRET")
+if not JWT_SECRET:
+    raise ValueError("JWT_SECRET environment variable is required")
 
 # MongoDB setup
 client = MongoClient(MONGO_URL)
