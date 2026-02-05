@@ -425,7 +425,7 @@ async def get_tarot_history(user: dict = Depends(get_current_user)):
     """Get user's tarot reading history"""
     readings = list(tarot_readings_collection.find(
         {"user_id": user["id"]},
-        {"_id": 0}
+        {"_id": 0, "cards": 1, "interpretation": 1, "question": 1, "spread_type": 1, "created_at": 1}
     ).sort("created_at", -1).limit(20))
     return {"readings": readings}
 
